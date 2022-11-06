@@ -2,14 +2,15 @@ package com.serenitydojo;
 
 public class Hamster extends Pet{
 
+    private String favoriteToy;
     private String favoriteGame = "runs in wheel";
     private int age;
     private String hamsterNoise = "Squeak";
 
 
-    public Hamster(String name, String favoriteGame, int age) {
+    public Hamster(String name, String favoriteToy, int age) {
         super(name,age);
-        this.favoriteGame = favoriteGame;
+        this.favoriteToy = favoriteToy;
         this.age = age;
     }
 

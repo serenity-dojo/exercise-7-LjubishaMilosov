@@ -1,20 +1,20 @@
 package com.serenitydojo.model;
 
-import static com.serenitydojo.model.AnimalType.CAT;
+
 import static com.serenitydojo.model.FoodType.*;
 
 public class Feeder {
-    public FoodType feeds(AnimalType animal, boolean isPremium) {
+    public FoodType feeds(String animal, boolean isPremium) {
 
 
         switch (animal) {
-            case CAT:
+            case "Cat":
                 return (isPremium == true) ? SALMON : TUNA;
 
-            case DOG:
+            case "Dog":
                 return (isPremium == true) ? DELUXE_DOG_FOOD : DOG_FOOD;
 
-            case HAMSTER:
+            case "Hamster":
                 return (isPremium == true) ? LETTUCE : CABBAGE;
 
             default:
